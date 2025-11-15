@@ -1,0 +1,9 @@
+# Example .gitignore for a WordPress Theme
+# Ignore media files
+/wp-content/uploads/
+
+# Ignore cache files
+/wp-content/cache/
+
+# Ignore vendor/dependency folders often found in modern development
+/node_modules
