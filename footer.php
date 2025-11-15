@@ -1,5 +1,5 @@
-<footer>
-    <p>&copy; <?php echo date("Y"); ?> Learn Theme. All rights reserved.</p>
+<footer style="padding:20px; background:#000; color:#fff; text-align:center;">
+    <p>© <?php echo date('Y'); ?> - My Custom Theme</p>
 </footer>
     <?php wp_footer(); ?>
 </body>

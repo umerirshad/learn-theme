@@ -6,7 +6,7 @@
         <h2><a href="<?php the_permalink( ); ?>"><?php the_title( ); ?></a></h2>
         <?php if(has_post_thumbnail(  )): ?>
             <div>
-                <?php the_post_thumbnail( 'medium' ); ?>
+                <a href="<?php the_permalink( ); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
             </div>
             <?php endif; ?>
             <?php the_excerpt(  ); ?>

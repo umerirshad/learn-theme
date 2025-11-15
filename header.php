@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <header>
-        <h1><?php bloginfo('name'); ?></h1>
+        <div class="container">
+            <?php 
+            if (function_exists('the_custom_logo')){
+                the_custom_logo( );
+            }else{
+                echo '<h1>'.get_bloginfo('name').'</h1>';
+            }
+            ?>
+
+        </div>
         <nav>
             <?php
             wp_nav_menu(array(
